@@ -6,11 +6,7 @@ if my_file.is_file():
     print('failas yra')
 else:
     print('failo nera')
-    # file exists
 
-# def read_file():
-#     with open('directory\*, 'r') as R:
-#         R.read()
 
 
 
