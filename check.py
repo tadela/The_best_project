@@ -1,12 +1,19 @@
-import os
-from pathlib import Path
+from os import listdir
+from os.path import isfile, join
 
-my_file = Path("C:/Users/tadrmk/PycharmProjects/The_best_project/directory/")
-if my_file.is_file():
-    print('failas yra')
-else:
-    print('failo nera')
+def does_file_exist_in_dir(path):
+    return any(isfile(join(path, i)) for i in listdir(path))
+
+def list_files(listas):
+    return listdir(listas)
+
+def open_files(filas):
+    return
+
+print(list_files("C:/Users/tadrmk/PycharmProjects/The_best_project/directory/"))
+#
+#
+# def read_file(file):
 
 
-
-
+#print(does_file_exist_in_dir("C:/Users/tadrmk/PycharmProjects/The_best_project/directory/"))
